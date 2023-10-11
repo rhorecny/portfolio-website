@@ -329,6 +329,10 @@ td {
     width: 55px;
     height: auto;
   }
+  #svg1 {
+    margin-bottom: 35px;
+    max-width: 250px;
+  }
 }
 @media all and (min-width: 500px) and (max-width: 750px) {
   .grid {
@@ -341,6 +345,10 @@ td {
   #logo {
     width: 65px;
     height: auto;
+  }
+  #svg1 {
+    margin-bottom: 35px;
+    max-width: 400px;
   }
 }
 @media all and (min-width: 750px) and (max-width: 900px) {
@@ -355,6 +363,10 @@ td {
   #logo {
     width: 75px;
     height: auto;
+  }
+  #svg1 {
+    margin-bottom: 35px;
+    max-width: 700px;
   }
   .grid__item:last-child {
     grid-column: auto / auto;
