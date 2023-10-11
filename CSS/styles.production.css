@@ -36,11 +36,11 @@ body {
   color: var(--darkgrey);
 }
 head {
-  font-size: 20px;
+  font-size: 25px;
   line-height: 1.6;
 }
 h1 {
-  font-size: 25px;
+  font-size: 15px;
   font-weight: 700;
 }
 h2 {
@@ -80,7 +80,7 @@ a:visited {
   border: none;
   display: inline-block;
   font-family: inherit;
-  margin-top: 5px;
+  margin-top: 8px;
   padding: var(--padding);
   border-radius: var(--button-radius);
   background-color: var(--button-color);
@@ -112,7 +112,7 @@ a:hover {
   background-color: var(--a-hover);
 }
 
-.personal-logo {
+.profile__portrait {
   float: left;
   min-width: 10%;
   max-width: 20%;
@@ -396,27 +396,22 @@ td {
   text-align: center;
   min-height: 100px;
 }
-#grid-container .grid__item:nth-child(7) {
-  -ms-grid-column: 4;
-  grid-column: 4;
+/* #grid-container .grid__item:nth-child(7) {
   grid-column-start: 4;
-  -ms-grid-row: 1;
-  grid-row: 1;
   grid-row-start: 1;
-  -ms-grid-row-span: 2;
   grid-row-end: 3;
-}
+} */
 /* responsive page */
 @media all and (max-width: 500px) {
   .grid {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
   }
-  #gird-container .grid__item:nth-child(7) {
+  /* #gird-container .grid__item:nth-child(7) {
     -ms-grid-column: 1;
-    grid-column: 1;
-    grid-column-start: 1;
-  }
+      grid-column: 1;
+        grid-column-start: 1;
+  } */
   #logo {
     width: 20px;
     height: auto;
@@ -433,13 +428,12 @@ td {
     -ms-grid-columns: 1fr 20px 1fr;
     grid-template-columns: 1fr 1fr;
   }
-  #grid-container .grid__item:nth-child(7) {
-    -ms-grid-column: 2;
-    grid-column: 2;
+  /* #grid-container .grid__item:nth-child(7) {
     grid-column-start: 2;
-    -ms-grid-row: 1;
-    -ms-grid-row-span: 6;
-    grid-row: 1/7;
+    grid-row: 1/7; 
+  }*/
+  .profile__portrait {
+    width: 75px;
   }
   #logo {
     width: 25px;
@@ -458,17 +452,16 @@ td {
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 10px;
   }
-  #grid-container .grid__item:nth-child(7) {
-    -ms-grid-column: 3;
-    grid-column: 3;
+  /* #grid-container .grid__item:nth-child(7) {
     grid-column-start: 3;
-    -ms-grid-row: 1;
-    -ms-grid-row-span: 3;
     grid-row: 1/4;
-  }
+  } */
   #logo {
     width: 30px;
     height: auto;
+  }
+  .profile__portrait {
+    width: 100px;
   }
   .grid__item:last-child {
     grid-column: auto / auto;
