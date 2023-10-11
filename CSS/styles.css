@@ -93,11 +93,6 @@ a:hover {
   background-color: var(--a-hover);
 }
 
-.profile__portrait {
-  float: left;
-  min-width: 10%;
-  max-width: 20%;
-}
 /* header */
 #logo {
   width: 35px;
@@ -322,9 +317,9 @@ td {
   .grid {
     grid-template-columns: 1fr;
   }
-  #gird-container .grid__item:nth-child(7) {
+  /* #gird-container .grid__item:nth-child(7) {
     grid-column-start: 1;
-  }
+  } */
   #logo {
     width: 20px;
     height: auto;
