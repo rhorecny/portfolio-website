@@ -172,7 +172,9 @@ button {
   -o-transition: opacity 0.2s ease;
   transition: opacity 0.2s ease;
 }
-
+.ryan-about div {
+  margin: 0px, 35px, 0px, 35px;
+}
 button:hover,
 button:focus,
 .button:hover,
@@ -185,7 +187,7 @@ button:focus,
 }
 /* about images */
 #svg1 {
-  margin-bottom: 35px;
+  margin: 0px 0px 0px 0px;
   max-width: 100%;
   height: auto;
   -webkit-box-align: center;
@@ -339,7 +341,7 @@ td {
   margin: 0 auto;
 }
 .ryan-about {
-  max-width: 50%;
+  max-width: 75%;
   margin: 0 auto;
   text-align: center;
 }
