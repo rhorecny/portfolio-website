@@ -112,17 +112,7 @@ a:hover {
   background-color: var(--a-hover);
 }
 
-/* .profile__portrait {
-  float: left;
-  min-width: 10%;
-  max-width: 20%;
-} */
 /* header */
-#logo {
-  width: 75px;
-  height: auto;
-  padding: var(--padding);
-}
 .page-header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -133,6 +123,9 @@ a:hover {
   border-bottom: var(--header-border);
 }
 .page-header__item {
+  width: 85px;
+  height: auto;
+  padding: var(--padding);
   -webkit-box-flex: 0;
   -ms-flex: 0 1 200px;
   flex: 0 1 200px;
@@ -386,21 +379,24 @@ td {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 20px 1fr 20px 1fr 20px 1fr;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(4, 1fr);
   grid-gap: 20px;
 }
-#grid-container .grid__item {
+#grid-container .grid_item {
   background-color: grey;
   border-radius: 15px;
   color: white;
   text-align: center;
   min-height: 100px;
 }
-/* #grid-container .grid__item:nth-child(7) {
+#grid-container .grid_item:nth-child(7) {
+  -ms-grid-column: 4;
   grid-column-start: 4;
+  -ms-grid-row: 1;
   grid-row-start: 1;
+  -ms-grid-row-span: 2;
   grid-row-end: 3;
-} */
+}
 /* responsive page */
 @media all and (max-width: 500px) {
   .grid {
@@ -408,23 +404,12 @@ td {
     grid-template-columns: 1fr;
   }
   /* #gird-container .grid__item:nth-child(7) {
-    -ms-grid-column: 1;
-      grid-column: 1;
-        grid-column-start: 1;
+    grid-column-start: 1;
   } */
-  #logo {
+  .page-header__item {
     width: 25%;
   }
   .profile__portrait {
-    width: 25%;
-  }
-  .button {
-    width: 25%;
-  }
-  th {
-    width: 25%;
-  }
-  th {
     width: 25%;
   }
   h1 {
@@ -439,24 +424,14 @@ td {
     -ms-grid-columns: 1fr 20px 1fr;
     grid-template-columns: 1fr 1fr;
   }
-  /* #grid-container .grid__item:nth-child(7) {
-    grid-column-start: 2;
-    grid-row: 1/7; 
-  }*/
   .profile__portrait {
     width: 50%;
   }
-  .button {
-    width: 50%;
-  }
-  #logo {
-    width: 50%;
-  }
-  th {
+  .page-header__item {
     width: 50%;
   }
   h1 {
-    font-size: 12px;
+    font-size: 15px;
   }
   h2 h3 {
     font-size: 10px;
@@ -468,24 +443,10 @@ td {
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 10px;
   }
-  /* #grid-container .grid__item:nth-child(7) {
-    grid-column-start: 3;
-    grid-row: 1/4;
-  } */
-  .button {
-    width: 75%;
-  }
-  #logo {
+  .page-header__item {
     width: 75%;
   }
   .profile__portrait {
-    width: 75%;
-  }
-  .grid__item:last-child {
-    grid-column: auto / auto;
-    grid-row: auto / auto;
-  }
-  th {
     width: 75%;
   }
   h1 {

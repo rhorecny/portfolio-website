@@ -94,11 +94,6 @@ a:hover {
 }
 
 /* header */
-#logo {
-  width: 35px;
-  height: auto;
-  padding: var(--padding);
-}
 .page-header {
   display: flex;
   width: 100%;
@@ -107,6 +102,9 @@ a:hover {
   border-bottom: var(--header-border);
 }
 .page-header__item {
+  width: 85px;
+  height: auto;
+  padding: var(--padding);
   flex: 0 1 200px;
 }
 .page-header__item:last-child {
@@ -297,21 +295,21 @@ td {
 }
 .grid {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(4, 1fr);
   grid-gap: 20px;
 }
-#grid-container .grid__item {
+#grid-container .grid_item {
   background-color: grey;
   border-radius: 15px;
   color: white;
   text-align: center;
   min-height: 100px;
 }
-/* #grid-container .grid__item:nth-child(7) {
+#grid-container .grid_item:nth-child(7) {
   grid-column-start: 4;
   grid-row-start: 1;
   grid-row-end: 3;
-} */
+}
 /* responsive page */
 @media all and (max-width: 500px) {
   .grid {
@@ -320,9 +318,11 @@ td {
   /* #gird-container .grid__item:nth-child(7) {
     grid-column-start: 1;
   } */
-  #logo {
-    width: 20px;
-    height: auto;
+  .page-header__item {
+    width: 25%;
+  }
+  .profile__portrait {
+    width: 25%;
   }
   h1 {
     font-size: 10px;
@@ -335,19 +335,14 @@ td {
   .grid {
     grid-template-columns: 1fr 1fr;
   }
-  /* #grid-container .grid__item:nth-child(7) {
-    grid-column-start: 2;
-    grid-row: 1/7; 
-  }*/
   .profile__portrait {
-    width: 75px;
+    width: 50%;
   }
-  #logo {
-    width: 25px;
-    height: auto;
+  .page-header__item {
+    width: 50%;
   }
   h1 {
-    font-size: 12px;
+    font-size: 15px;
   }
   h2 h3 {
     font-size: 10px;
@@ -358,20 +353,11 @@ td {
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 10px;
   }
-  /* #grid-container .grid__item:nth-child(7) {
-    grid-column-start: 3;
-    grid-row: 1/4;
-  } */
-  #logo {
-    width: 30px;
-    height: auto;
+  .page-header__item {
+    width: 75%;
   }
   .profile__portrait {
-    width: 100px;
-  }
-  .grid__item:last-child {
-    grid-column: auto / auto;
-    grid-row: auto / auto;
+    width: 75%;
   }
   h1 {
     font-size: 15px;
